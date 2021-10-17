@@ -1,5 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import Banner from './components/Banner/Banner';
 import Navigation from './components/Navigation/Navigation';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navigation></Navigation>
+        <Banner></Banner>
       </BrowserRouter>
     </div>
   );
