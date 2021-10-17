@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Neurology",
+        "desc": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system.",
+        "img": "https://i.ibb.co/fkn7qd6/neurology.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Ophthalmology",
+        "desc": "Ophthalmology is a branch of medicine and surgery that deals with the diagnosis and treatment of disorders of the eye.",
+        "img": "https://i.ibb.co/yh02rJM/opthamology.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Surgical",
+        "desc": "Surgery is a medical or dental specialty that uses operative manual and instrumental techniques on a person to investigate or treat a pathological condition",
+        "img": "https://i.ibb.co/HnqHs8s/surgery.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Dental",
+        "desc": "The field of dentistry or dental medicine includes teeth as well as other aspects of the craniofacial complex ",
+        "img": "https://i.ibb.co/hBWczZc/teeth.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Cardiology",
+        "desc": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist",
+        "img": "https://i.ibb.co/VBFL3G5/cardio.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Psychology",
+        "desc": "Psychology is the study of the mind and behavior, according to the American Psychological Association. It is the study of the mind, how it works, and how it affects behavior",
+        "img": "https://i.ibb.co/qmwqtXB/psychology.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Psychiatry",
+        "desc": "Psychiatry is the branch of medicine focused on the diagnosis, treatment and prevention of mental, emotional and behavioral disorders.",
+        "img": "https://i.ibb.co/znK88Nq/psyhciatry.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Pathology",
+        "desc": "Pathology is the medical specialty concerned with the study of the nature and causes of diseases",
+        "img": "https://i.ibb.co/qRDv5Q9/pathology.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Councelling",
+        "desc": "Pathology is the medical specialty concerned with the study of the nature and causes of diseases",
+        "img": "https://i.ibb.co/qmwqtXB/psychology.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Orthopaedics",
+        "desc": "Orthopedics is a branch of medicine that focuses on the care of the musculoskeletal system",
+        "img": "https://i.ibb.co/dDWnhR2/orthp.png"
+    }
+]
