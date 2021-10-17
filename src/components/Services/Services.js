@@ -2,6 +2,7 @@ import React from 'react';
 import { Button, Container, Row } from 'react-bootstrap';
 import useLoadService from '../../hooks/useLoadService';
 import Service from '../Service/Service';
+import { FaArrowRight } from 'react-icons/fa'
 
 const Services = () => {
 
@@ -20,7 +21,7 @@ const Services = () => {
                     }
                 </Row>
             </div>
-            <Button variant='secondary'>View All</Button>
+            <Button variant='secondary'>View All   <FaArrowRight /></Button>
         </Container >
     );
 };
