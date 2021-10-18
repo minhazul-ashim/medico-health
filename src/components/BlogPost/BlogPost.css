@@ -1,0 +1,20 @@
+.blogPost {
+
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.blogPost h4 {
+
+    color: #333;
+}
+
+.blogPost p {
+
+    color: #777;
+}
+
+.blogPost blockquote {
+
+    color: blue;
+}

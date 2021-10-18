@@ -1,0 +1,11 @@
+.blog-title {
+
+    border: 1px solid rgb(206, 202, 202);
+    padding: 1% 2%;
+}
+
+.read-link {
+
+text-decoration: none;
+color: rgb(0, 47, 255);
+}
