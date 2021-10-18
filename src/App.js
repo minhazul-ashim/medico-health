@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 import './App.css';
 import Banner from './components/Banner/Banner';
 import BlogsContainer from './components/BlogsContainer/BlogsContainer';
