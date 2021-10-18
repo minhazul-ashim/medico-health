@@ -16,19 +16,19 @@ const BlogsContainer = () => {
             <p className="lead text-center mb-5">
                 Keep yourself and your loved ones updated with our medical and health related blogs. Learn more, gain health more
             </p>
-            <Row xs={1} md={2} className="blog-box">
-                <Col className='blogs-nav col-4'>
+            <div xs={1} md={2} className="row blog-box">
+                <Col className='blogs-nav col-12 col-md-4 order-last order-md-first'>
                     <BlogNav data={blogs}></BlogNav>
                 </Col>
 
-                <Col className='blog-post col-8'>
+                <Col className='blog-post col-12 col-md-8 order-first order-md-last'>
                     <Switch>
                         <Route path='/blogpost/:title'>
                             <BlogPost data={blogs}></BlogPost>
                         </Route>
                     </Switch>
                 </Col>
-            </Row>
+            </div>
         </Container>
     );
 };
