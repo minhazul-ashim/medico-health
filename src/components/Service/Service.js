@@ -15,7 +15,7 @@ const Service = (props) => {
                     <Card.Text>
                         {desc.slice(0, 100)}......
                     </Card.Text>
-                    <Button><MdReadMore /> Learn More</Button>
+                    <Button variant='outline-primary btn-sm '><MdReadMore /> Learn More</Button>
                 </Card.Body>
             </Card>
         </Col>
