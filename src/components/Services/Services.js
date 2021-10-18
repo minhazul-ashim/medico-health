@@ -12,7 +12,7 @@ const Services = () => {
         <Container className='d-flex flex-column align-items-center my-5'>
             <h1 className='text-center my-4'>Services</h1>
             <div className="d-flex justify-content-center my-5">
-                <Row xs={1} md={2} lg={4} className='g-4'>
+                <Row xs={1} md={2} lg={4} className='g-4 p-5 p-md-5'>
                     {
                         services.slice(0, 4).map(service => {
 
