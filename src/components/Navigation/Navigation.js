@@ -1,10 +1,16 @@
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import logo from '../../images/logo.png'
 import './Navigation.css'
 
 const Navigation = () => {
+
+    const { user, logout } = useAuth();
+
+    console.log(user)
+
     return (
         <Navbar bg="light" expand="lg">
             <Container>
@@ -14,8 +20,17 @@ const Navigation = () => {
                     <Nav className="ms-auto d-flex justify-content-end align-items-center w-75">
                         <NavLink to='/home' className='navlink'>Home</NavLink>
                         <NavLink to='/blog' className='navlink'>Contact</NavLink>
-                        <NavLink to='/login' className='navlink'>Login</NavLink>
-                        <NavLink to='/register' className='navlink'><Button>Sign Up</Button></NavLink>
+                        {
+                            !user ?
+                                <>
+                                    <NavLink to='/login' className='navlink'>Login</NavLink>
+                                    <NavLink to='/register' className='navlink'><Button>Sign Up</Button></NavLink>
+                                </> :
+                                <>  <p className='navlink text-danger'>{user?.displayName}</p>
+                                    <img src={user?.photoURL} alt='' />
+                                    <Button onClick={logout}>Log out</Button>
+                                </>
+                        }
                     </Nav>
                 </Navbar.Collapse>
             </Container>

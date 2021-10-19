@@ -7,7 +7,7 @@ import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
 
-    const { user, error, signInUsingGoogle, signInUsingGithub } = useAuth();
+    const { error, signInUsingGoogle, signInUsingGithub } = useAuth();
 
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => console.log(data);
