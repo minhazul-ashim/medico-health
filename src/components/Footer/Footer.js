@@ -2,8 +2,9 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './Footer.css'
-import { BsFacebook, BsTwitter, BsLinkedin } from 'react-icons/bs'
+import { BsFacebook, BsTwitter, BsLinkedin, BsEnvelope, BsPhone } from 'react-icons/bs'
 import { AiOutlineGooglePlus } from 'react-icons/ai'
+import { FaLocationArrow } from 'react-icons/fa'
 
 const Footer = () => {
     return (
@@ -16,12 +17,12 @@ const Footer = () => {
                     </Col>
                     <Col xs={8} md={4}>
                         <h5>
-                            Address
+                            <FaLocationArrow />  Address
                         </h5>
                         <p>Medico Hospital, Johnson St., Rd-2, New Jersey, USA</p>
-                        <h5>Email</h5>
+                        <h5><BsEnvelope />  Email</h5>
                         <p>information@medico.com</p>
-                        <h5>Phone</h5>
+                        <h5><BsPhone /> Phone</h5>
                         <p>+11256486</p>
                     </Col>
                     <Col xs={4} md={2}>
