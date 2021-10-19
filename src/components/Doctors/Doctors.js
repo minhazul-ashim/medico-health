@@ -16,7 +16,7 @@ const Doctors = () => {
             <div className="my-5">
                 <Row xs={1} md={2} lg={4} className='w-100 p-md-0 p-5 me-5 g-4'>
                     {
-                        doctors.slice(0, 4).map(doctor => {
+                        doctors.slice(0, 8).map(doctor => {
                             return <DoctorCard key={doctor.id} detail={doctor}></DoctorCard>
                         })
                     }

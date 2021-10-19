@@ -10,6 +10,8 @@ const useFirebase = () => {
 
     const [error, setError] = useState('')
 
+    const [loading, setLoading] = useState(true)
+
     const auth = getAuth();
 
     const signInUsingGoogle = () => {
@@ -20,6 +22,7 @@ const useFirebase = () => {
             .catch(error => {
                 setError(error.message)
             })
+            .finally(() => setLoading(false))
     }
 
     const signInUsingGithub = () => {
@@ -30,6 +33,7 @@ const useFirebase = () => {
             .catch(error => {
                 setError(error.message)
             })
+            .finally(() => setLoading(false))
     }
 
     const createUser = (data) => {
@@ -41,6 +45,7 @@ const useFirebase = () => {
             .catch(error => {
                 setError(error.message)
             })
+            .finally(() => setLoading(false))
     }
 
     const passwordAuth = ({ email, password }) => {
@@ -48,7 +53,8 @@ const useFirebase = () => {
         return signInWithEmailAndPassword(auth, email, password)
             .catch((error) => {
                 setError(error.message)
-            });
+            })
+            .finally(() => setLoading(false))
     }
 
     const logout = () => {
@@ -60,17 +66,18 @@ const useFirebase = () => {
             .catch(error => {
                 setError(error.message)
             })
+            .finally(() => setLoading(false))
     }
 
     useEffect(() => {
 
         onAuthStateChanged(auth, user => {
             if (user) {
-
-                setUser(user)
+                setUser(user);
             } else {
-                setUser(null)
+                setUser(null);
             }
+            setLoading(false)
         })
     }, [])
 
@@ -78,6 +85,8 @@ const useFirebase = () => {
     return {
         user,
         error,
+        loading,
+        setLoading,
         createUser,
         signInUsingGoogle,
         signInUsingGithub,

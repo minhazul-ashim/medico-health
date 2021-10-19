@@ -27,6 +27,7 @@ const Login = () => {
             .then(result => {
                 history.push(location)
             })
+            .finally ()
     }
     const githubLogin = () => {
 

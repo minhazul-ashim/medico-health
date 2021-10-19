@@ -1,9 +1,6 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Banner from './components/Banner/Banner';
 import BlogPost from './components/BlogPost/BlogPost';
-import BlogsContainer from './components/BlogsContainer/BlogsContainer';
-import Doctors from './components/Doctors/Doctors';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
@@ -12,7 +9,6 @@ import NoPage from './components/NotFound/NotFound';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
-import Services from './components/Services/Services';
 import AuthProvider from './contexts/AuthProvider';
 
 function App() {
