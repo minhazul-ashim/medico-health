@@ -10,6 +10,7 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import AuthProvider from './contexts/AuthProvider';
+import AllDoctors from '../src/components/AllDoctors/AllDoctors'
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route path='/register'>
               <Register></Register>
+            </Route>
+            <Route path='/doctors'>
+              <AllDoctors></AllDoctors>
             </Route>
             <Route path='/blogpost/:title'>
               <BlogPost></BlogPost>
