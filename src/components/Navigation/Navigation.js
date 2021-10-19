@@ -9,8 +9,6 @@ const Navigation = () => {
 
     const { user, logout } = useAuth();
 
-    console.log(user)
-
     return (
         <Navbar bg="light" expand="lg">
             <Container>
