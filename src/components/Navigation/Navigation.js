@@ -11,12 +11,11 @@ const Navigation = () => {
                 <Navbar.Brand><img width='50px' src={logo} alt="" /> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto d-flex justify-content-around align-items-center">
+                    <Nav className="ms-auto d-flex justify-content-end align-items-center w-75">
                         <NavLink to='/home' className='navlink'>Home</NavLink>
-                        <NavLink to='/blog' className='navlink'>Blog</NavLink>
-                        <NavLink to='/services' className='navlink'>Services</NavLink>
-                        <NavLink to='/contact' className='navlink'>Contact</NavLink>
-                        <Button>Login</Button>
+                        <NavLink to='/blog' className='navlink'>Contact</NavLink>
+                        <NavLink to='/login' className='navlink'>Login</NavLink>
+                        <NavLink to='/Sign Up' className='navlink'><Button>Sign Up</Button></NavLink>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

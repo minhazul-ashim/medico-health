@@ -11,9 +11,6 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Navigation></Navigation>
-        <Switch>
-
-        </Switch>
         <Banner></Banner>
         <Services></Services>
         <Doctors></Doctors>
