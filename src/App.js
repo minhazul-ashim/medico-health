@@ -13,6 +13,8 @@ import AuthProvider from './contexts/AuthProvider';
 import AllDoctors from '../src/components/AllDoctors/AllDoctors'
 import BlogsContainer from './components/BlogsContainer/BlogsContainer';
 import AllServices from '../src/components/AllServices/AllServices'
+import ContactForm from './components/ContactForm/ContactForm';
+import Doctors from './components/Doctors/Doctors';
 
 function App() {
   return (
@@ -23,6 +25,12 @@ function App() {
           <Switch>
             <PrivateRoute path='/service/:id'>
               <ServiceDetail></ServiceDetail>
+            </PrivateRoute>
+            <PrivateRoute path='/contact'>
+              <ContactForm></ContactForm>
+            </PrivateRoute>
+            <PrivateRoute path='/doctors'>
+              <AllDoctors></AllDoctors>
             </PrivateRoute>
             <Route path='/home'>
               <Home></Home>
@@ -36,9 +44,9 @@ function App() {
             <Route path='/register'>
               <Register></Register>
             </Route>
-            <Route path='/doctors'>
+            {/* <Route path='/doctors'>
               <AllDoctors></AllDoctors>
-            </Route>
+            </Route> */}
             <Route path='/services'>
               <AllServices></AllServices>
             </Route>

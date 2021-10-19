@@ -32,7 +32,7 @@ const Footer = () => {
                             <li><Link to='/services' className='navlink'>Services</Link></li>
                             <li><Link to='blogpost/:title' className='navlink'>Blogs</Link></li>
                             <li><Link to='/doctors' className='navlink'>Doctors</Link></li>
-                            <li><Link className='navlink'>Contact</Link></li>
+                            <li><Link to='/contact' className='navlink'>Contact</Link></li>
                         </ul>
                     </Col>
                 </Row>

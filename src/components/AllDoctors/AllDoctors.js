@@ -21,7 +21,6 @@ const Doctors = () => {
                     }
                 </Row>
             </div>
-            <Button variant='outline-dark rounded-pill'>View All   <FaArrowRight /></Button>
         </Container>
     );
 };
