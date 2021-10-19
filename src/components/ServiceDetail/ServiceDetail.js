@@ -10,7 +10,7 @@ const ServiceDetail = () => {
     const service = useFindDetail(id);
 
     return (
-        <Container>
+        <Container className='mt-5'>
             <Row>
                 <Col xs={10} md={8} lg={6} className='mx-auto'>
                     <Card>
