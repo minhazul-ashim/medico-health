@@ -6,6 +6,7 @@ import Doctors from './components/Doctors/Doctors';
 import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
 import Navigation from './components/Navigation/Navigation';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Register from './components/Register/Register';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import Services from './components/Services/Services';
@@ -17,6 +18,11 @@ function App() {
       <AuthProvider>
         <BrowserRouter>
           <Navigation></Navigation>
+          <Switch>
+            <PrivateRoute path='/service/:id'>
+              <ServiceDetail></ServiceDetail>
+            </PrivateRoute>
+          </Switch>
           <Switch>
             <Route path='/login'>
               <Login></Login>

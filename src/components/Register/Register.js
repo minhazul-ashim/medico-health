@@ -1,30 +1,22 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { useForm } from 'react-hook-form';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Register = () => {
 
-    // const [email, setEmail] = useState('');
-    // const [password, setPassword] = useState('')
-
     const { error, createUser } = useAuth();
+    let history = useHistory()
 
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => createUser(data);
+    const onSubmit = data => {
 
-    // const getEmail = (e) => {
-
-    //     setEmail(e.target.value)
-    //     console.log(email)
-    // }
-
-    // const getPassword = (e) => {
-
-    //     setPassword(e.target.value)
-    //     console.log(password)
-    // }
+        createUser(data)
+            .then(result => {
+                history.push('/home')
+            })
+    };
 
     return (
         <Container className='p-5 d-flex flex-column align-items-center'>

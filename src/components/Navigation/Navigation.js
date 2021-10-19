@@ -25,7 +25,7 @@ const Navigation = () => {
                                     <NavLink to='/register' className='navlink'><Button>Sign Up</Button></NavLink>
                                 </> :
                                 <>  <p className='navlink text-danger'>{user?.displayName}</p>
-                                    <img src={user?.photoURL} alt='' />
+                                    <img style={{ width: '50px' }} src={user?.photoURL} alt='' className='rounded-circle mx-2'/>
                                     <Button onClick={logout}>Log out</Button>
                                 </>
                         }

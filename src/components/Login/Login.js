@@ -2,15 +2,39 @@ import React from 'react';
 import { Container, Button } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 import { BsGoogle, BsGithub } from 'react-icons/bs'
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
 
+    const location = useLocation().state?.from;
+
+    let history = useHistory();
+
     const { error, signInUsingGoogle, signInUsingGithub, passwordAuth } = useAuth();
 
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => passwordAuth(data);
+    const onSubmit = data => {
+        passwordAuth(data)
+            .then(result => {
+                history.push(location)
+            });
+    };
+
+    const googleLogin = () => {
+
+        signInUsingGoogle()
+            .then(result => {
+                history.push(location)
+            })
+    }
+    const githubLogin = () => {
+
+        signInUsingGithub()
+            .then(result => {
+                history.push(location)
+            })
+    }
 
     return (
         <Container className='p-5 d-flex flex-column align-items-center'>
@@ -26,8 +50,8 @@ const Login = () => {
             </form>
             <div>
                 <p>Log in using</p>
-                <Button onClick={signInUsingGoogle} variant='danger me-2'><BsGoogle /></Button>
-                <Button onClick={signInUsingGithub} variant='dark'><BsGithub /></Button>
+                <Button onClick={googleLogin} variant='danger me-2'><BsGoogle /></Button>
+                <Button onClick={githubLogin} variant='dark'><BsGithub /></Button>
                 <p>New Here? <Link to='/register'> Register</Link></p>
                 <p>{error}</p>
             </div>
