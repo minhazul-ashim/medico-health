@@ -29,9 +29,9 @@ const Footer = () => {
                         <h5>Navigate to</h5>
                         <ul className='list-unstyled'>
                             <li><Link to='/home' className='navlink'>Home</Link></li>
-                            <li><Link className='navlink'>Services</Link></li>
-                            <li><Link className='navlink'>Blogs</Link></li>
-                            <li><Link className='navlink'>Doctors</Link></li>
+                            <li><Link to='/services' className='navlink'>Services</Link></li>
+                            <li><Link to='blogpost/:title' className='navlink'>Blogs</Link></li>
+                            <li><Link to='/doctors' className='navlink'>Doctors</Link></li>
                             <li><Link className='navlink'>Contact</Link></li>
                         </ul>
                     </Col>

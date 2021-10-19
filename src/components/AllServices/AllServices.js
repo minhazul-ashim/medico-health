@@ -16,14 +16,13 @@ const Services = () => {
             <div className="d-flex justify-content-center my-5">
                 <Row xs={1} md={2} lg={4} className='g-4 p-5 p-md-5'>
                     {
-                        services.slice(0, 8).map(service => {
+                        services.map(service => {
 
                             return <Service data={service} key={service.id}></Service>
                         })
                     }
                 </Row>
             </div>
-            {/* <Button variant='outline-dark rounded-pill'>View All   <FaArrowRight /></Button> */}
         </Container >
     );
 };

@@ -11,6 +11,8 @@ import Register from './components/Register/Register';
 import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import AuthProvider from './contexts/AuthProvider';
 import AllDoctors from '../src/components/AllDoctors/AllDoctors'
+import BlogsContainer from './components/BlogsContainer/BlogsContainer';
+import AllServices from '../src/components/AllServices/AllServices'
 
 function App() {
   return (
@@ -37,8 +39,11 @@ function App() {
             <Route path='/doctors'>
               <AllDoctors></AllDoctors>
             </Route>
+            <Route path='/services'>
+              <AllServices></AllServices>
+            </Route>
             <Route path='/blogpost/:title'>
-              <BlogPost></BlogPost>
+              <BlogsContainer></BlogsContainer>
             </Route>
             <Route path='*'>
               <NoPage></NoPage>
