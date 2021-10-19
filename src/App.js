@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Login from './components/Login/Login';
 import Navigation from './components/Navigation/Navigation';
 import Register from './components/Register/Register';
+import ServiceDetail from './components/ServiceDetail/ServiceDetail';
 import Services from './components/Services/Services';
 import AuthProvider from './contexts/AuthProvider';
 

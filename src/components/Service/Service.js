@@ -1,10 +1,11 @@
 import React from 'react';
 import { Card, Col, Button } from 'react-bootstrap';
 import { MdReadMore } from 'react-icons/md'
+import { Link } from 'react-router-dom';
 
 const Service = (props) => {
 
-    const { name, desc, img } = props.data
+    const { id, name, desc, img } = props.data
 
     return (
         <Col>
@@ -15,7 +16,9 @@ const Service = (props) => {
                     <Card.Text>
                         {desc.slice(0, 100)}......
                     </Card.Text>
-                    <Button variant='outline-primary btn-sm '><MdReadMore /> Learn More</Button>
+                    <Link to={`/service/${id}`}>
+                        <Button variant='outline-primary btn-sm '><MdReadMore /> Learn More</Button>
+                    </Link>
                 </Card.Body>
             </Card>
         </Col>
