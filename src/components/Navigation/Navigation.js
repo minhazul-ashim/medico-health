@@ -10,8 +10,6 @@ const Navigation = () => {
 
     const { user, logout } = useAuth();
 
-    console.log(user)
-
     return (
         <Navbar bg="light" expand="lg">
             <Container>
@@ -19,8 +17,8 @@ const Navigation = () => {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto d-flex justify-content-end align-items-center w-100">
-                        <NavLink to='/home' className='navlink'>Home</NavLink>
-                        <NavLink to='/contact' className='navlink'>Contact</NavLink>
+                        <NavLink activeStyle={{ borderBottom: '2px solid tomato', color: 'blue' }} to='/home' className='navlink'>Home</NavLink>
+                        <NavLink activeStyle={{ borderBottom: '2px solid tomato', color: 'blue' }} to='/contact' className='navlink'>Contact</NavLink>
                         {
                             !user ?
                                 <>
