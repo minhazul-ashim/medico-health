@@ -35,7 +35,7 @@ const Navigation = () => {
                                                 <img style={{ width: '50px' }} src={user?.photoURL} alt='' className='rounded-circle me-md-2' />
                                         }
                                     </div>
-                                    <Button onClick={logout}>Log out</Button>
+                                    <Button variant='danger' onClick={logout}>Log out</Button>
                                 </>
                         }
                     </Nav>

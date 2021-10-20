@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { BsGoogle, BsGithub } from 'react-icons/bs'
 import { Link, useLocation, useHistory } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import logo from '../../images/logo.png'
 
 const Login = () => {
 
@@ -39,6 +40,9 @@ const Login = () => {
 
     return (
         <Container className='p-5 d-flex flex-column align-items-center'>
+            <div className="w-25">
+                <img className='img-fluid' src={logo} alt="" />
+            </div>
             <form onSubmit={handleSubmit(onSubmit)} className='w-75'>
 
                 <input defaultValue="" {...register("email", { required: true })} className='form-control mb-3' placeholder='Enter your email' />
