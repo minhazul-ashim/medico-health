@@ -1,6 +1,5 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
-import BlogPost from './components/BlogPost/BlogPost';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Login from './components/Login/Login';
@@ -14,7 +13,6 @@ import AllDoctors from '../src/components/AllDoctors/AllDoctors'
 import BlogsContainer from './components/BlogsContainer/BlogsContainer';
 import AllServices from '../src/components/AllServices/AllServices'
 import ContactForm from './components/ContactForm/ContactForm';
-import Doctors from './components/Doctors/Doctors';
 
 function App() {
   return (
@@ -44,9 +42,6 @@ function App() {
             <Route path='/register'>
               <Register></Register>
             </Route>
-            {/* <Route path='/doctors'>
-              <AllDoctors></AllDoctors>
-            </Route> */}
             <Route path='/services'>
               <AllServices></AllServices>
             </Route>

@@ -7,7 +7,7 @@ import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
 
-    const location = useLocation().state?.from;
+    const location = useLocation().state?.from || '/home';
 
     let history = useHistory();
 
@@ -27,7 +27,7 @@ const Login = () => {
             .then(result => {
                 history.push(location)
             })
-            .finally ()
+            .finally()
     }
     const githubLogin = () => {
 
