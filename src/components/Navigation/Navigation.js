@@ -11,7 +11,7 @@ const Navigation = () => {
     const { user, logout } = useAuth();
 
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" sticky="top">
             <Container>
                 <Navbar.Brand><img width='50px' src={logo} alt="" /> </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
