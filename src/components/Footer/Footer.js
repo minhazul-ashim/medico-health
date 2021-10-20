@@ -37,7 +37,7 @@ const Footer = () => {
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12} className='d-flex flex-column align-items-center'>
+                    <Col xs={12} className='d-flex flex-column align-items-center  align-items-md-start'>
                         <h6>Important Links</h6>
                         <div className="social-links d-flex justify-content-around w-25 my-3">
                             <BsFacebook />

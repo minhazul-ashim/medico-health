@@ -49,10 +49,12 @@ const Login = () => {
 
                 <input type="submit" className='btn btn-success' />
             </form>
-            <div>
+            <div className='d-flex flex-column align-items-center'>
                 <p>Log in using</p>
-                <Button onClick={googleLogin} variant='danger me-2'><BsGoogle /></Button>
-                <Button onClick={githubLogin} variant='dark'><BsGithub /></Button>
+                <div>
+                    <Button onClick={googleLogin} variant='danger me-2'><BsGoogle /></Button>
+                    <Button onClick={githubLogin} variant='dark'><BsGithub /></Button>
+                </div>
                 <p>New Here? <Link to='/register'> Register</Link></p>
                 <p>{error}</p>
             </div>
